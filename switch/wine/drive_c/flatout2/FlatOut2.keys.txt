@@ -1,0 +1,24 @@
+# FlatOut 2 on Wine-NX. The buttons send these keys; the touchscreen and the right
+# stick stay the mouse. (The patched FlatOut2.exe ignores DirectInput pads: while a
+# program reads the pad, Wine-NX sends no keys.)
+# Format as in switch/wine/config/keys.txt: NAME=Windows virtual-key code.
+# Bind the race actions once in the game (Options - Controls) to the keys below.
+LSTICK=keys
+DPAD=keys
+RSTICK=mouse
+TOUCH=mouse
+UP=0x26      # Up arrow: menus; also the left stick pushed up
+DOWN=0x28    # Down arrow
+LEFT=0x25    # Left arrow: steer left
+RIGHT=0x27   # Right arrow: steer right
+A=0x0D       # Enter: menu select, "press START"
+B=0x42       # B: free key, bind it in Options - Controls
+X=0x0D       # Enter as well, in case A stays the mouse button
+PLUS=0x1B    # Esc: back / pause
+ZR=0x26      # Up arrow: Accelerate
+ZL=0x28      # Down arrow: Brake / reverse
+R=0x20       # Space: Handbrake
+L=0x11       # Ctrl: Nitro / Eject
+Y=0x52       # R: Reset car
+MINUS=0x43   # C: Change View
+STICKL=0x56  # V: Reverse Camera (look back)

@@ -1,0 +1,7 @@
+# FlatOut 2 (GOG, PC). Direct3D 9 through DXVK, which Wine-NX hands the game itself.
+# 32-bit program: like FTL and Wolverine it runs under the 32-bit forwarder, in the
+# 39-bit Autorun mode Wine-NX maps it above 4 GB and WOW64 fails (c000000d).
+title=FlatOut 2
+address-space=32-bit
+d3d=dxvk
+frame-limit=30
