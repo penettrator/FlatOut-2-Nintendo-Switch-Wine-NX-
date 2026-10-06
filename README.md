@@ -18,7 +18,9 @@
    в папку с игрой из GOG **на компьютере** (не на SD-карту) — в ту папку, где лежит
    `FlatOut2.exe`.
 
-2. Запустите `patch-flatout2.bat` двойным щелчком.
+2. Запустите `patch-flatout2.bat` двойным щелчком. Если игра установлена в
+   `Program Files`, запустите его от имени администратора (правый клик →
+   «Запуск от имени администратора»).
 
 3. Дождитесь сообщения **«Готово»** и нажмите любую клавишу, чтобы закрыть окно.
    Скрипт пропатчит `FlatOut2.exe` (оригинал сохранится рядом как
@@ -70,7 +72,8 @@
 1. Copy `patch-flatout2.bat` and `patch-flatout2.ps1` from this repository into your GOG
    game folder **on your PC** (not on the SD card) — the folder where `FlatOut2.exe` is.
 
-2. Double-click `patch-flatout2.bat`.
+2. Double-click `patch-flatout2.bat`. If the game is installed in `Program Files`, run it
+   as administrator (right-click → "Run as administrator").
 
 3. Wait for the **"Done"** message and press any key to close the window. The script
    patches `FlatOut2.exe` (the original is kept next to it as `FlatOut2.exe.original`) and

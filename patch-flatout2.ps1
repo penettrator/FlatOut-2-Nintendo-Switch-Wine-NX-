@@ -3,6 +3,18 @@
 #  1. патчит FlatOut2.exe / patches FlatOut2.exe
 #  2. кладёт рядом d3dx9_30.dll из Windows / puts d3dx9_30.dll from Windows next to it
 $ErrorActionPreference = 'Stop'
+trap {
+    Write-Host ''
+    if ($_.Exception -is [System.UnauthorizedAccessException]) {
+        Write-Host 'Нет доступа к папке игры. Нажмите на patch-flatout2.bat правой кнопкой мыши и'
+        Write-Host 'выберите «Запуск от имени администратора».'
+        Write-Host 'No write access to the game folder. Right-click patch-flatout2.bat and choose'
+        Write-Host '"Run as administrator".'
+    } else {
+        Write-Host "Ошибка / Error: $($_.Exception.Message)"
+    }
+    exit 1
+}
 $exe = Join-Path $PSScriptRoot 'FlatOut2.exe'
 $orig = '40078C35DE1366488D7C3DC761008CD4'
 $done = '27E421EF3B04E51FED0D259A33279811'
